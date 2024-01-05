@@ -40,4 +40,4 @@ def random_position():
     position_number = random.randint(1, 7)
     position_arrays = POSTIONS[position_number]
     random_fretboard = draw_position(position_arrays)
-    return random_fretboard
+    return position_number

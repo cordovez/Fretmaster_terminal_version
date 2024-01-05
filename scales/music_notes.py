@@ -28,7 +28,7 @@ def add_note_value() -> None:
 
         new_position = (string_index + fret["fret"]) % len(ALL_NOTES)
 
-    fret["note"] = ALL_NOTES[new_position]
+        fret["note"] = ALL_NOTES[new_position]
 
 
 def notes_on_12_frets():
