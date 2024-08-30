@@ -1,24 +1,14 @@
 import pprint
-
+from data.c_key_positions import (pos_one, pos_two, pos_three, pos_four, pos_five,
+                                  pos_six, pos_seven)
+from utils.draw_fretboards import draw_terminal_fretboard
 from games.guess_position_shape import guess_position
-from scales.music_notes import notes_on_12_frets
-
-pp = pprint.PrettyPrinter(indent=4)
-
-
-#
-all_notes = notes_on_12_frets()
+pp = pprint.PrettyPrinter(indent=2)
 
 
 def main():
-    response = input(
-        "\n\nPick your choice:\n\n A) Print note values for every fret \n B) Play a game of 10 guesses for position shapes\n\n"
-    )
-    print(response)
-    if response.upper() == "A":
-        pp.pprint(all_notes)
-    else:
-        guess_position()
+    # print( draw_terminal_fretboard(pos_one))
+    guess_position()
 
 
 if __name__ == "__main__":
